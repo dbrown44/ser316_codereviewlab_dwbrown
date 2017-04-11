@@ -31,9 +31,9 @@ class ServerSolution implements AccountServer {
 						accountMap.put(acc.getName(), acc);
 				}
 			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
+		} catch (Exception theException) {
+			System.out.println(theException.getMessage());
+			theException.printStackTrace();
 		} finally {
 			if (in != null) {
 				try {
